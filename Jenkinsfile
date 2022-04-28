@@ -2,7 +2,7 @@ node {
 
     checkout scm
 
-    docker.withRegistry('https://registry.hub.docker.com', 'dockerHub') {
+    docker.withRegistry('https://registry.hub.docker.com', 'Dockerhub-ID') {
 
         def customImage = docker.build("eliyagervas/dockerwebapp")
 
